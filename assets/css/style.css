@@ -80,7 +80,7 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid #efefef;
+    border-left: 1px solid #efefef !important;
     padding-left: 15px;
     line-height: 18px;
 }
@@ -102,6 +102,7 @@ nav a:first-child {
     max-width: 650px;
     float: left;
     border: 1px solid #ddd;
+    margin-top: 25px;
     
 }
 
@@ -122,6 +123,7 @@ nav a:first-child {
     float: right;
     border: 1px solid #ddd;
     margin-bottom: 20px;
+    margin-top:25px;
 }
 
 h3, .sidebar, h2 {
@@ -153,7 +155,7 @@ footer {
     color: #ccc;
     font-size: 12px;
     text-align: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     bottom: 0;
 }
@@ -229,4 +231,12 @@ input[type=submit] {
     font-size: 18px;
     padding: 10px 30px;
     cursor: pointer;    
+}
+
+
+@media screen and (max-width: 640px) {
+    main, body, .nav, .bio, container, .auth-image, .main-container img
+    {
+        width: 100%;
+    }
 }
